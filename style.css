@@ -1,0 +1,96 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #45badd;
+  font-family: "Lato", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: url("./robot.gif");
+  background-size: 73%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.activity-container {
+  /* height: 25vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75rem;
+  color: white;
+  text-align: center;
+  margin: 0 50px;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 2rem;
+  width: 500px;
+  color: white;
+  background: #ff3482;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  filter: brightness(95%);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .container {
+    height: 65vh;
+    background-size: 100%;
+    background-position: center center;
+    justify-content: flex-end;
+  }
+
+  button {
+    width: 50%;
+  }
+
+  .activity-container {
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+}
