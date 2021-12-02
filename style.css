@@ -61,6 +61,7 @@ button {
   border: none;
   border-radius: 5px;
   box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  margin: 0;
 }
 
 button:hover {
@@ -76,8 +77,12 @@ button:active {
   transform: scale(0.98);
 }
 
+.activity-name {
+  margin-top: 0;
+}
+
 /* Media Query: Tablet or Smaller */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
   .container {
     height: 65vh;
     background-size: 100%;
@@ -87,10 +92,17 @@ button:active {
 
   button {
     width: 50%;
+    bottom: 80px;
+    position: relative;
+  }
+
+  .activity-name {
+    bottom: 75px;
+    position: relative;
   }
 
   .activity-container {
-    margin: 10px;
-    font-size: 1.5rem;
+    /* margin: 5px; */
+    font-size: 1.25rem;
   }
 }
